@@ -4,7 +4,7 @@ import sqlalchemy as sa
 from users import User
 import datetime
 
-DB_PATH = "sqlite:///sochi_athletes_copy.sqlite3"
+DB_PATH = "sqlite:///sochi_athletes.sqlite3"
 Base = declarative_base()
 
 
