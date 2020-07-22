@@ -35,9 +35,8 @@ def main():
 
 def connect_to_db():
     engine = sa.create_engine(DB_PATH)
-    Base.metadata.create_all(engine)
-    session = sessionmaker(engine)
-    return session()
+    Session = sessionmaker(engine)
+    return Session()
 
 
 def find_user_in_db(session, user_id):
